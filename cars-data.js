@@ -14,7 +14,7 @@ export const cars = [
         accessories: {
             stereo: true,
             AC: false,
-            '4wd': true,
+            FWD: true,
         },
     },
     {
@@ -23,7 +23,7 @@ export const cars = [
         accessories: {
             stereo: false,
             AC: false,
-            '4wd': false,
+            FWD: false,
         },
     },
 ];
