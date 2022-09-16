@@ -6,8 +6,7 @@ export function renderTorch(torch) {
     const pEl = document.createElement('p');
     pEl.textContent = torch.controls;
     const pEl2 = document.createElement('p');
-    for (let size of torch.size) {
-        // pEl2.append()
-        console.log(size);
-    }
+    pEl2.textContent = torch.sizes;
+    li.append(headerEl, pEl, pEl2);
+    return li;
 }

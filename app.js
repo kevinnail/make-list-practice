@@ -5,8 +5,11 @@ import { renderCandy } from './render-candy.js';
 import { animals } from './animal-data.js';
 import { renderAnimal } from './render-animals.js';
 
-import { torches } from '.torches-data.js';
+import { torches } from './torches-data.js';
 import { renderTorch } from './render-torches.js';
+
+import { cars } from './cars-data.js';
+import { renderCar } from './render-cars.js';
 
 const candyList = document.getElementById('candy-list');
 function displayCandies() {
@@ -27,3 +30,23 @@ function displayAnimals() {
     }
 }
 displayAnimals();
+
+const torchList = document.getElementById('torch-list');
+function displayTorches() {
+    torchList.innerHTML = '';
+    for (let torch of torches) {
+        const torchEl = renderTorch(torch);
+        torchList.append(torchEl);
+    }
+}
+displayTorches();
+
+const carList = document.getElementById('car-list');
+function displayCars() {
+    carList.innerHTML = '';
+    for (let car of cars) {
+        const carEl = renderCar(car);
+        carList.append(carEl);
+    }
+}
+displayCars();
